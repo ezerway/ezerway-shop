@@ -14,10 +14,10 @@ describe('AppController', () => {
   });
 
   describe('getData', () => {
-    it('should return Welcome to Ezer Way Shop!"', () => {
+    it('should return "Welcome to server!"', () => {
       const appController = app.get<AppController>(AppController);
       expect(appController.getData()).toEqual({
-        message: 'Welcome to Ezer Way Shop!',
+        message: 'Welcome to server!',
       });
     });
   });
